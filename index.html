@@ -4,10 +4,42 @@
         <meta charset="UTF-8" />
         <title>Backbone.js</title>
     </head>
-    <body>
+    <style type="text/css">
 
-        <div id="worker_list"></div>
-        <div id="worker_collection"></div>
+    body{
+        background: #5B4635;
+        margin: 0;
+        padding: 0px;
+    }
+    #wrapper{
+        width: 960px;
+        padding: 10px;
+        background: #fafafa;
+        box-shadow: 0px 0px 2px rgba(0,0,0,.9);
+        margin: 0 auto;
+        margin-top: 40px;
+        border-radius: 3px;
+    }
+    .worker_list > div{
+        background: #F1D695;
+        margin-bottom: 1px;
+        padding: 10px 8px;
+    }
+    .worker_list div.disabled{
+        background: #f99;
+        opacity: .6;
+    }
+    </style>
+    <body>
+        <div id="wrapper">
+            <div id="worker_list"></div>
+            <button id="add_worker">Add a New Worker</button>
+            <hr />
+            <div id="worker_collection"></div>
+        </div>
+       
+
+
         <script src="js/jquery.js"></script>
         <script src="js/Underscore-min.js"></script>
         <script src="js/Backbone-min.js"></script>
